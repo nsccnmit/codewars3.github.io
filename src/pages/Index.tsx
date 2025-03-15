@@ -9,6 +9,7 @@ import EventDetails from "@/components/sections/EventDetails";
 import Timeline from "@/components/sections/Timeline";
 import Prizes from "@/components/sections/Prizes";
 import Team from "@/components/sections/Team";
+import Sponsors from "@/components/sections/Sponsors";
 import FAQ from "@/components/sections/FAQ";
 
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
         <EventDetails />
         <Timeline />
         <Prizes />
+        <Sponsors />
         <Team />
         <FAQ />
       </main>
