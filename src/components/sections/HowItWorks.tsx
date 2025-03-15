@@ -26,7 +26,7 @@ const HowItWorks = () => {
   ];
   
   return (
-    <section className="bg-codewars-navy/30 py-24">
+    <section className="bg-codewars-navy/30 py-24 pb-12">
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-block mb-3 bg-codewars-blue/10 text-codewars-blue px-3 py-1 rounded-full text-sm font-medium">

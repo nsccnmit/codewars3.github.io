@@ -32,7 +32,7 @@ const Timeline = () => {
   ];
   
   return (
-    <section id="timeline" className="py-24 bg-codewars-navy/30">
+    <section id="timeline" className="py-12">
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-block mb-3 bg-codewars-blue/10 text-codewars-blue px-3 py-1 rounded-full text-sm font-medium">
