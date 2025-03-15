@@ -163,6 +163,14 @@ export default {
 					'0%': { transform: 'translateY(0)' },
 					'100%': { transform: 'translateY(-50%)' },
 				},
+				'code-flow-left': {
+					'0%': { transform: 'translateX(0) translateY(0)' },
+					'100%': { transform: 'translateX(-20%) translateY(-50%)' },
+				},
+				'code-flow-right': {
+					'0%': { transform: 'translateX(0) translateY(0)' },
+					'100%': { transform: 'translateX(20%) translateY(-50%)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -176,7 +184,9 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out forwards',
 				'slide-from-left': 'slide-from-left 0.5s ease-out forwards',
 				'slide-from-right': 'slide-from-right 0.5s ease-out forwards',
-				'code-flow': 'code-flow 20s linear infinite',
+				'code-flow': 'code-flow 25s linear infinite',
+				'code-flow-left': 'code-flow-left 30s linear infinite',
+				'code-flow-right': 'code-flow-right 35s linear infinite',
 			},
 			backgroundImage: {
 				'hero-pattern': "radial-gradient(50% 50% at 50% 50%, rgba(14, 165, 233, 0.08) 0%, rgba(10, 26, 64, 0) 100%)",

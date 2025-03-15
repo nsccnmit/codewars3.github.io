@@ -2,12 +2,15 @@
 import { useEffect, useRef } from "react";
 import GradientText from "../ui/GradientText";
 
-// Binary code animation in the background
+// Enhanced binary code animation in the background
 const BinaryCodeBackground = () => {
-  const generateBinaryString = () => {
+  const generateBinaryString = (length: number) => {
     let result = '';
-    for (let i = 0; i < 2000; i++) {
+    for (let i = 0; i < length; i++) {
       result += Math.random() > 0.5 ? '1' : '0';
+      // Add space every 8 characters
+      if (i % 8 === 7) result += ' ';
+      // Add new line to create a grid-like pattern
       if (i % 50 === 49) result += '\n';
     }
     return result;
@@ -15,8 +18,14 @@ const BinaryCodeBackground = () => {
 
   return (
     <div className="binary-code">
-      <div className="binary-code-animation">
-        {generateBinaryString()}
+      <div className="binary-code-animation left-animation">
+        {generateBinaryString(1000)}
+      </div>
+      <div className="binary-code-animation right-animation" style={{ animationDelay: "1s" }}>
+        {generateBinaryString(1000)}
+      </div>
+      <div className="binary-code-animation center-animation" style={{ animationDelay: "2s" }}>
+        {generateBinaryString(1000)}
       </div>
     </div>
   );
