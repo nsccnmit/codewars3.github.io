@@ -7,7 +7,7 @@ const BinaryCodeBackground = () => {
   const generateBinaryString = (length: number) => {
     let result = '';
     for (let i = 0; i < length; i++) {
-      result += Math.random() > 0.5 ? '1' : '0';
+      result += Math.random() > 0.8 ? '1' : '0';
       // Add space every 8 characters
       if (i % 8 === 7) result += ' ';
       // Add new line to create a grid-like pattern
@@ -19,13 +19,19 @@ const BinaryCodeBackground = () => {
   return (
     <div className="binary-code">
       <div className="binary-code-animation left-animation">
-        {generateBinaryString(1000)}
-      </div>
-      <div className="binary-code-animation right-animation" style={{ animationDelay: "1s" }}>
-        {generateBinaryString(1000)}
+        {generateBinaryString(2000)}
       </div>
       <div className="binary-code-animation center-animation" style={{ animationDelay: "2s" }}>
-        {generateBinaryString(1000)}
+        {generateBinaryString(2000)}
+      </div>
+      <div className="binary-code-animation right-animation" style={{ animationDelay: "4s" }}>
+        {generateBinaryString(2000)}
+      </div>
+      <div className="binary-code-animation left-animation" style={{ animationDelay: "6s", top: "30%" }}>
+        {generateBinaryString(1500)}
+      </div>
+      <div className="binary-code-animation right-animation" style={{ animationDelay: "8s", top: "50%" }}>
+        {generateBinaryString(1500)}
       </div>
     </div>
   );
@@ -63,7 +69,7 @@ const Hero = () => {
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
       style={{
-        backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.15) 0%, rgba(10, 26, 64, 0) 50%)'
+        backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.1) 0%, rgba(10, 14, 10, 0) 50%)'
       }}
     >
       <BinaryCodeBackground />
@@ -71,7 +77,7 @@ const Hero = () => {
       <div 
         className="absolute top-0 left-0 w-full h-full"
         style={{
-          background: 'radial-gradient(circle at 20% 30%, rgba(14, 165, 233, 0.08) 0%, rgba(10, 26, 64, 0) 30%)',
+          background: 'radial-gradient(circle at 20% 30%, rgba(34, 197, 94, 0.08) 0%, rgba(10, 14, 10, 0) 30%)',
           transform: 'translate(var(--move-x, 0), var(--move-y, 0))',
           transition: 'transform 0.1s ease-out'
         }}
@@ -80,7 +86,7 @@ const Hero = () => {
       <div 
         className="absolute top-0 left-0 w-full h-full"
         style={{
-          background: 'radial-gradient(circle at 80% 70%, rgba(144, 97, 249, 0.08) 0%, rgba(10, 26, 64, 0) 30%)',
+          background: 'radial-gradient(circle at 80% 70%, rgba(34, 197, 94, 0.08) 0%, rgba(10, 14, 10, 0) 30%)',
           transform: 'translate(calc(var(--move-x, 0) * -1), calc(var(--move-y, 0) * -1))',
           transition: 'transform 0.1s ease-out'
         }}
