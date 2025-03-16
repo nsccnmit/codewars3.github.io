@@ -1,5 +1,5 @@
 
-import { CalendarClock } from "lucide-react";
+import { CalendarClock, Circle } from "lucide-react";
 import GradientText from "../ui/GradientText";
 
 const Timeline = () => {
@@ -17,22 +17,22 @@ const Timeline = () => {
     {
       date: "April 4, 2025",
       title: "Round 1: TRIVIA TRIUMPH",
-      description: "Interactive quiz on Menti testing coding knowledge and logical reasoning"
+      description: "Interactive quiz on Menti testing coding knowledge and logical reasoning. Duration: 1 hour."
     },
     {
       date: "April 4, 2025",
       title: "Round 2: BYTE-SIZED BATTLE",
-      description: "Write the shortest possible correct solution to coding challenges"
+      description: "Write the shortest possible correct solution to coding challenges. Teams compete one-on-one with winners advancing. Duration: 1.5 hours."
     },
     {
       date: "April 4, 2025",
       title: "Round 3: BUG BUSTER",
-      description: "Debugging challenge with strategic sabotage element"
+      description: "Fix buggy code quickly with a strategic sabotage element where teams can inject bugs into opponents' code. Duration: 1.5 hours."
     },
     {
       date: "April 4, 2025",
       title: "Award Ceremony",
-      description: "Winners announcement and prize distribution"
+      description: "Winners announcement and prize distribution: 1st place ₹3,500, 2nd place ₹2,500, 3rd place ₹1,000. Exclusive InterviewBuddy vouchers for all participants."
     }
   ];
   
@@ -51,30 +51,48 @@ const Timeline = () => {
           </p>
         </div>
         
-        <div className="max-w-3xl mx-auto mt-16">
-          <div className="relative pl-8 md:pl-12">
-            <div className="timeline-line"></div>
-            
-            {timelineEvents.map((event, index) => (
-              <div 
-                key={index} 
-                className="mb-12 relative opacity-0 animate-fade-in-up"
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <div className="absolute -left-2 md:-left-3 timeline-dot"></div>
-                <div className="glass p-6 rounded-xl">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h3 className="text-lg md:text-xl font-bold blue-glow">{event.title}</h3>
-                    <div className="flex items-center mt-2 md:mt-0">
-                      <CalendarClock className="h-4 w-4 text-codewars-blue mr-2" />
-                      <span className="text-white/70 text-sm">{event.date}</span>
-                    </div>
+        <div className="max-w-5xl mx-auto relative">
+          {/* Center line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-codewars-blue via-codewars-cyan to-codewars-purple"></div>
+          
+          {timelineEvents.map((event, index) => (
+            <div 
+              key={index} 
+              className={`flex items-stretch mb-16 opacity-0 animate-fade-in-up ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
+              style={{ animationDelay: `${index * 200}ms` }}
+            >
+              {/* Content side */}
+              <div className={`w-5/12 ${index % 2 === 0 ? "pr-12 text-right" : "pl-12 text-left"}`}>
+                <div className="glass p-6 rounded-xl h-full flex flex-col justify-center">
+                  <h3 className="text-xl font-bold blue-glow mb-2">{event.title}</h3>
+                  <div className="flex items-center mb-3 justify-center sm:justify-start text-sm">
+                    <CalendarClock className="h-4 w-4 text-codewars-blue mr-2" />
+                    <span className="text-white/70">{event.date}</span>
                   </div>
                   <p className="text-white/80">{event.description}</p>
                 </div>
               </div>
-            ))}
-          </div>
+              
+              {/* Middle node and arrow */}
+              <div className="w-2/12 flex justify-center relative">
+                <div className="absolute top-1/2 transform -translate-y-1/2 flex items-center justify-center z-10">
+                  <div className="w-8 h-8 rounded-full bg-codewars-blue/20 flex items-center justify-center 
+                               border-2 border-codewars-blue shadow-[0_0_10px_rgba(14,165,233,0.6)]">
+                    <Circle className="w-3 h-3 text-codewars-blue fill-codewars-blue" />
+                  </div>
+                </div>
+                
+                {/* Connecting line to event */}
+                <div className={`absolute top-1/2 transform -translate-y-1/2 w-1/2 h-0.5 
+                               ${index % 2 === 0 ? "right-0 bg-gradient-to-r" : "left-0 bg-gradient-to-l"} 
+                               from-transparent to-codewars-blue`}>
+                </div>
+              </div>
+              
+              {/* Empty side */}
+              <div className="w-5/12"></div>
+            </div>
+          ))}
         </div>
         
         <div className="mt-16 text-center">

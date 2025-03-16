@@ -20,13 +20,13 @@ const HowItWorks = () => {
     {
       icon: <Trophy className="text-codewars-blue w-12 h-12" />,
       title: "Win",
-      description: "Top performers take home cash prizes from a pool of ₹7,000, certificates, and exclusive InterviewBuddy vouchers.",
+      description: "Top performers take home cash prizes from a pool of ₹7,000, certificates, and exclusive InterviewBuddy vouchers for all participants.",
       delay: 500
     }
   ];
   
   return (
-    <section className="bg-codewars-navy/30 py-24 pb-0">
+    <section className="bg-codewars-navy/30 py-24">
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-block mb-3 bg-codewars-blue/10 text-codewars-blue px-3 py-1 rounded-full text-sm font-medium">
@@ -60,7 +60,7 @@ const HowItWorks = () => {
           ))}
         </div>
         
-        <div className="mt-16 text-center pb-16">
+        <div className="mt-16 text-center">
           <a 
             href="https://unstop.com" 
             target="_blank"
