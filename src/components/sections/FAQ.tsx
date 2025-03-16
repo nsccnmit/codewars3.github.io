@@ -53,7 +53,7 @@ const FAQ = () => {
     },
     {
       question: "Is there a registration fee?",
-      answer: "No, participation in CodeWars 3.0 is completely free of charge. We believe in providing equal opportunities for all coding enthusiasts to showcase their talents without any financial barriers."
+      answer: "Yes, there is a minimal registration fee of ₹150 per team for CodeWars 3.0. This helps us provide a better event experience for all participants."
     },
     {
       question: "Can I participate as a team?",
@@ -108,7 +108,9 @@ const FAQ = () => {
           Don't see your question here? Feel free to reach out to us directly.
         </p>
         <a 
-          href="mailto:info@codewars.tech" 
+          href="https://forms.gle/A123Xyz456" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="button-secondary inline-flex"
         >
           Contact Us

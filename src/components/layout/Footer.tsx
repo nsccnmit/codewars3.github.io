@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 import GradientText from "../ui/GradientText";
 
 const Footer = () => {
@@ -21,13 +21,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-4">
               <a 
-                href="https://github.com" 
+                href="https://instagram.com/codewars" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
-                aria-label="GitHub"
+                aria-label="Instagram"
               >
-                <Github size={20} />
+                <Instagram size={20} />
               </a>
               <a 
                 href="https://linkedin.com" 
@@ -39,9 +39,11 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:contact@codewars.tech" 
+                href="https://forms.gle/A123Xyz456" 
+                target="_blank"
+                rel="noopener noreferrer" 
                 className="text-white/70 hover:text-white transition-colors"
-                aria-label="Email"
+                aria-label="Contact Form"
               >
                 <Mail size={20} />
               </a>
@@ -51,12 +53,12 @@ const Footer = () => {
           {/* Quick links */}
           <div className="flex flex-col space-y-2">
             <h3 className="text-lg font-bold text-white mb-4">Quick Links</h3>
-            <Link to="/" className="text-white/70 hover:text-white transition-colors">Home</Link>
-            <Link to="/#about" className="text-white/70 hover:text-white transition-colors">About</Link>
-            <Link to="/#event-details" className="text-white/70 hover:text-white transition-colors">Event Details</Link>
-            <Link to="/#timeline" className="text-white/70 hover:text-white transition-colors">Timeline</Link>
-            <Link to="/team" className="text-white/70 hover:text-white transition-colors">Team</Link>
-            <Link to="/sponsors" className="text-white/70 hover:text-white transition-colors">Sponsors</Link>
+            <button onClick={() => document.getElementById('hero')?.scrollIntoView({behavior: 'smooth'})} className="text-white/70 hover:text-white transition-colors text-left">Home</button>
+            <button onClick={() => document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})} className="text-white/70 hover:text-white transition-colors text-left">About</button>
+            <button onClick={() => document.getElementById('event-details')?.scrollIntoView({behavior: 'smooth'})} className="text-white/70 hover:text-white transition-colors text-left">Event Details</button>
+            <button onClick={() => document.getElementById('timeline')?.scrollIntoView({behavior: 'smooth'})} className="text-white/70 hover:text-white transition-colors text-left">Timeline</button>
+            <button onClick={() => document.getElementById('team')?.scrollIntoView({behavior: 'smooth'})} className="text-white/70 hover:text-white transition-colors text-left">Team</button>
+            <button onClick={() => document.getElementById('sponsors')?.scrollIntoView({behavior: 'smooth'})} className="text-white/70 hover:text-white transition-colors text-left">Sponsors</button>
           </div>
           
           {/* Contact */}
@@ -66,10 +68,12 @@ const Footer = () => {
               NMIT, Bengaluru, India
             </p>
             <a 
-              href="mailto:contact@codewars.tech" 
+              href="https://forms.gle/A123Xyz456" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white/70 hover:text-white transition-colors"
             >
-              contact@codewars.tech
+              Contact Form
             </a>
             <a 
               href="tel:+919876543210" 
@@ -85,12 +89,12 @@ const Footer = () => {
             © {new Date().getFullYear()} CodeWars 3.0 - All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/privacy" className="text-white/70 hover:text-white transition-colors text-sm">
+            <a href="https://forms.gle/A123Xyz456" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors text-sm">
               Privacy Policy
-            </Link>
-            <Link to="/terms" className="text-white/70 hover:text-white transition-colors text-sm">
+            </a>
+            <a href="https://forms.gle/A123Xyz456" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors text-sm">
               Terms of Service
-            </Link>
+            </a>
           </div>
         </div>
       </div>

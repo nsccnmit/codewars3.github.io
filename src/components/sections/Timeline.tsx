@@ -12,12 +12,12 @@ const Timeline = () => {
     {
       date: "March 30, 2025",
       title: "Registration Closes",
-      description: "Last day to register for the competition"
+      description: "Last day to register online. Walk-in registrations will also be available on the event day."
     },
     {
       date: "April 4, 2025",
       title: "Round 1: TRIVIA TRIUMPH",
-      description: "Interactive quiz on Menti testing coding knowledge and logical reasoning. Duration: 1 hour."
+      description: "Interactive quiz to be announced on-spot testing coding knowledge and logical reasoning. Duration: 1 hour."
     },
     {
       date: "April 4, 2025",
@@ -82,7 +82,7 @@ const Timeline = () => {
                   </div>
                 </div>
                 
-                {/* Connecting line to event - Fixed the direction */}
+                {/* Connecting line to event */}
                 <div className={`absolute top-1/2 transform -translate-y-1/2 w-1/2 h-0.5 
                                ${index % 2 === 0 ? "left-0 bg-gradient-to-l from-codewars-blue to-transparent" : "right-0 bg-gradient-to-r from-codewars-blue to-transparent"}`}>
                 </div>
