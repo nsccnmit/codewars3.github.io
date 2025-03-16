@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-4">
               <a 
-                href="https://instagram.com/codewars" 
+                href="https://www.instagram.com/nscc_nmit" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -39,7 +39,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://forms.gle/A123Xyz456" 
+                href="https://forms.gle/ysFZisanDKuhx9pJ8" 
                 target="_blank"
                 rel="noopener noreferrer" 
                 className="text-white/70 hover:text-white transition-colors"
@@ -68,7 +68,7 @@ const Footer = () => {
               NMIT, Bengaluru, India
             </p>
             <a 
-              href="https://forms.gle/A123Xyz456" 
+              href="https://forms.gle/ysFZisanDKuhx9pJ8" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white transition-colors"
@@ -76,7 +76,7 @@ const Footer = () => {
               Contact Form
             </a>
             <a 
-              href="tel:+919876543210" 
+              href="tel:+919463928232" 
               className="text-white/70 hover:text-white transition-colors"
             >
               +91 9876543210
@@ -89,10 +89,10 @@ const Footer = () => {
             © {new Date().getFullYear()} CodeWars 3.0 - All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="https://forms.gle/A123Xyz456" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors text-sm">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors text-sm">
               Privacy Policy
             </a>
-            <a href="https://forms.gle/A123Xyz456" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors text-sm">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors text-sm">
               Terms of Service
             </a>
           </div>
