@@ -7,11 +7,11 @@ const EventDetails = () => {
   const rounds = [
     {
       title: "Round 1: TRIVIA TRIUMPH",
-      description: "An interactive quiz on Menti that tests your knowledge about coding, algorithms, logical reasoning, and general computer science concepts.",
+      description: "An interactive quiz that tests your knowledge about coding, algorithms, logical reasoning, and general computer science concepts.",
       details: [
         "Duration: 1 hour",
         "Format: Interactive real-time quiz",
-        "Platform: Menti",
+        "Platform: To be announced on-spot",
         "Judging: Speed & accuracy of responses"
       ],
       delay: 100
