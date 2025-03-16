@@ -76,7 +76,7 @@ const EventDetails = () => {
             {index === rounds.length - 1 && (
               <div className="mt-8 flex justify-center">
                 <a 
-                  href="https://leetcode.com/problems/valid-binary-search-tree/" 
+                  href="https://leetcode.com/problems/rotate-array/description/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-codewars-blue hover:text-codewars-cyan transition-colors"
