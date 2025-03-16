@@ -3,12 +3,22 @@ import { Github, Linkedin } from "lucide-react";
 import GradientText from "../ui/GradientText";
 import AnimatedCard from "../ui/AnimatedCard";
 
+import AarjikaImg from "@/components/images/team/Aarjika.jpeg";
+import AdityaImg from "@/components/images/team/Aditya.png";
+import AyushImg from "@/components/images/team/Ayush.jpeg";
+import BhargaviImg from "@/components/images/team/Bhargavi.jpeg";
+import HarshitImg from "@/components/images/team/Harshit.jpg";
+import MridulImg from "@/components/images/team/Mridul.jpg";
+import ParvathyImg from "@/components/images/team/Parvathy.jpeg";
+import PremImg from "@/components/images/team/Prem.jpeg";
+
+
 const Team = () => {
   const teamMembers = [
     {
       name: "Aarjika Lahiri",
       role: "President",
-      image: "https://placehold.co/400x400?text=AJ",
+      image: AarjikaImg,
       linkedin: "https://www.linkedin.com/in/aarjika-lahiri-471129281/",
       github: "https://github.com",
       delay: 100
@@ -16,7 +26,7 @@ const Team = () => {
     {
       name: "Ayush Sikriwal",
       role: "Vice President",
-      image: "https://placehold.co/400x400?text=SL",
+      image: AyushImg,
       linkedin: "https://www.linkedin.com/in/ayush-sikriwal-88b93a203",
       github: "https://github.com",
       delay: 200
@@ -32,7 +42,7 @@ const Team = () => {
     {
       name: "Mridul Tiwari",
       role: "Tech Head",
-      image: "https://placehold.co/400x400?text=PP",
+      image: MridulImg,
       linkedin: "https://www.linkedin.com/in/mridul-tiwari-502825291/",
       github: "https://github.com/mridulchills",
       delay: 400
@@ -40,7 +50,7 @@ const Team = () => {
     {
       name: "Aditya Singh",
       role: "Design Head",
-      image: "https://placehold.co/400x400?text=MC",
+      image: AdityaImg,
       linkedin: "https://linkedin.com",
       github: "https://github.com",
       delay: 500
@@ -48,7 +58,7 @@ const Team = () => {
     {
       name: "Harshit Ashok Hanabar",
       role: "Social Media Head",
-      image: "https://placehold.co/400x400?text=SW",
+      image: HarshitImg,
       linkedin: "https://linkedin.com",
       github: "https://github.com",
       delay: 600
@@ -56,7 +66,7 @@ const Team = () => {
     {
       name: "Prem Piyush",
       role: "Documentation Head",
-      image: "https://placehold.co/400x400?text=SW",
+      image: PremImg,
       linkedin: "https://www.linkedin.com/in/prem-piyush-2185292ab/",
       github: "https://github.com",
       delay: 600
@@ -64,7 +74,7 @@ const Team = () => {
     {
       name: "Bhargavi Saraswat",
       role: "Marketing Head",
-      image: "https://placehold.co/400x400?text=SW",
+      image: BhargaviImg,
       linkedin: "https://www.linkedin.com/in/bhargavi-saraswat-441b31274/",
       github: "https://github.com",
       delay: 600
@@ -72,7 +82,7 @@ const Team = () => {
     {
       name: "Parvathy S",
       role: "Public Relations Head",
-      image: "https://placehold.co/400x400?text=SW",
+      image: ParvathyImg,
       linkedin: "https://www.linkedin.com/in/parvathy-s-a14438281/",
       github: "https://github.com",
       delay: 600
@@ -90,7 +100,7 @@ const Team = () => {
           <img 
             src={member.image} 
             alt={member.name} 
-            className="w-full h-full object-cover transition-transform group-hover:scale-105"
+            className="w-full object-cover transition-transform group-hover:scale-105"
             loading="lazy"
           />
         </div>
