@@ -64,12 +64,18 @@ const Timeline = () => {
               {/* Content side */}
               <div className={`w-5/12 ${index % 2 === 0 ? "pr-12 text-right" : "pl-12 text-left"}`}>
                 <div className="glass p-6 rounded-xl h-full flex flex-col justify-center">
-                  <h3 className="text-xl font-bold blue-glow mb-2">{event.title}</h3>
+                  <h3 className="text-xl font-bold blue-glow mb-2" style={{
+                    fontSize: "clamp(1px, 3vw, 24px)",
+                    overflowWrap: "break-word"
+                  }}>{event.title}</h3>
                   <div className="flex items-center mb-3 justify-center sm:justify-start text-sm">
                     <CalendarClock className="h-4 w-4 text-codewars-blue mr-2" />
                     <span className="text-white/70">{event.date}</span>
                   </div>
-                  <p className="text-white/80">{event.description}</p>
+                  <p className="text-white/80" style={{
+                    fontSize: "clamp(1px, 3vw, 18px)",
+                    overflowWrap: "break-word"
+                  }}>{event.description}</p>
                 </div>
               </div>
               
