@@ -112,7 +112,7 @@
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl font-bold mb-8 text-center;
+    @apply font-bold text-center;
   }
 
   .subsection-title {
