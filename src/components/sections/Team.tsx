@@ -11,6 +11,7 @@ import HarshitImg from "@/components/images/team/Harshit.jpg";
 import MridulImg from "@/components/images/team/Mridul.jpg";
 import ParvathyImg from "@/components/images/team/Parvathy.jpeg";
 import PremImg from "@/components/images/team/Prem.jpeg";
+import HimanshuImg from "@/components/images/team/Himanshu.jpeg";
 
 
 const Team = () => {
@@ -34,7 +35,7 @@ const Team = () => {
     {
       name: "Himanshu Agarwal",
       role: "General Secretary",
-      image: "https://placehold.co/400x400?text=RS",
+      image: HimanshuImg,
       linkedin: "https://linkedin.com",
       github: "https://github.com",
       delay: 300
