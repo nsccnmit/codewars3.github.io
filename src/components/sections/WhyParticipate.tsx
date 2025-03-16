@@ -8,7 +8,7 @@ const WhyParticipate = () => {
     {
       icon: <Medal className="h-10 w-10 text-codewars-blue" />,
       title: "Cash Prizes",
-      description: "Win from a prize pool worth ₹50,000 with additional rewards for different categories.",
+      description: "Win from a prize pool worth ₹7,000 with rewards for top performers.",
       delay: 100
     },
     {
@@ -66,7 +66,7 @@ const WhyParticipate = () => {
       <div className="mt-16 glass p-8 rounded-2xl text-center">
         <h3 className="text-2xl font-bold text-white mb-4">Ready to Test Your Coding Skills?</h3>
         <p className="text-white/80 mb-6 max-w-2xl mx-auto">
-          Join hundreds of participants from across India in this thrilling coding competition and showcase your talent.
+          Join hundreds of participants from across India in this thrilling coding competition. Participate solo or as a team of 2 and showcase your talent.
         </p>
         <a 
           href="https://unstop.com" 

@@ -57,23 +57,23 @@ const FAQ = () => {
     },
     {
       question: "Can I participate as a team?",
-      answer: "Rounds 1 and 2 are individual competitions. For the final hackathon (Round 3), qualified participants can form teams of 1-3 members. All team members must have participated individually in the earlier rounds."
+      answer: "Yes, you can participate solo or as a team of 2 members. Teams must register together through the Unstop platform before the registration deadline."
     },
     {
       question: "What programming languages are allowed?",
-      answer: "You can code in C, C++, Java, Python, or JavaScript for the coding rounds. For the final hackathon, you can use any technology stack of your choice, as long as you can demonstrate its functionality."
+      answer: "You can code in C, C++, Java, Python, or JavaScript for the coding rounds. The specific language options will be provided during each round."
     },
     {
       question: "How will I be evaluated?",
-      answer: "Round 1 (MCQs) will be scored based on correct answers. Round 2 will evaluate your solutions on correctness, time complexity, and code quality. The final hackathon will be judged on innovation, implementation, usability, and presentation."
+      answer: "Round 1 (TRIVIA TRIUMPH) will be scored based on speed and accuracy of responses. Round 2 (BYTE-SIZED BATTLE) evaluates solutions based on code length and efficiency. Round 3 (BUG BUSTER) judges your debugging speed and correctness."
     },
     {
-      question: "What if I can't attend the on-campus finals?",
-      answer: "While we encourage on-campus participation for the finals, we understand that not everyone may be able to travel. Remote participation options will be available for the final round, but on-site participants may have certain advantages in the hackathon format."
+      question: "What happens during the Bug Buster round?",
+      answer: "In the Bug Buster round, teams will be given buggy code to fix. There will also be a strategic element where teams get a 3-minute window to inject bugs into their opponent's code, adding an exciting competitive dimension."
     },
     {
       question: "Will I receive a certificate for participating?",
-      answer: "Yes, all participants who complete at least one round will receive digital participation certificates. Finalists and winners will receive special recognition certificates in addition to their prizes."
+      answer: "Yes, all participants will receive digital participation certificates. Winners will receive special recognition certificates in addition to their prizes and InterviewBuddy vouchers."
     }
   ];
   

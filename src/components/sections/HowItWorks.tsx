@@ -8,19 +8,19 @@ const HowItWorks = () => {
     {
       icon: <UserCheck className="text-codewars-blue w-12 h-12" />,
       title: "Register",
-      description: "Sign up on Unstop before March 30, 2025 to secure your spot in the competition.",
+      description: "Sign up on Unstop before March 30, 2025 to secure your spot in the competition. You can participate solo or as a team of 2.",
       delay: 100
     },
     {
       icon: <Code className="text-codewars-blue w-12 h-12" />,
       title: "Compete",
-      description: "Participate in multiple rounds of challenging coding problems and algorithmic puzzles.",
+      description: "Participate in multiple rounds of challenging coding problems, interactive quizzes, and strategic debugging challenges.",
       delay: 300
     },
     {
       icon: <Trophy className="text-codewars-blue w-12 h-12" />,
       title: "Win",
-      description: "Top performers take home cash prizes, certificates, and exclusive goodies.",
+      description: "Top performers take home cash prizes from a pool of ₹7,000, certificates, and exclusive InterviewBuddy vouchers.",
       delay: 500
     }
   ];

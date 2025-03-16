@@ -6,21 +6,21 @@ const Prizes = () => {
     {
       position: "1st Place",
       prize: "₹3,500",
-      extras: ["Trophy", "Certificate", "Internship Opportunities"],
+      extras: ["Trophy", "Certificate", "InterviewBuddy Vouchers"],
       color: "from-[#FFD700] to-[#FFC107]",
       delay: 100
     },
     {
       position: "2nd Place",
       prize: "₹2,500",
-      extras: ["Trophy", "Certificate", "Exclusive Goodies"],
+      extras: ["Trophy", "Certificate", "InterviewBuddy Vouchers"],
       color: "from-[#C0C0C0] to-[#A0A0A0]",
       delay: 300
     },
     {
       position: "3rd Place",
       prize: "₹1,000",
-      extras: ["Trophy", "Certificate", "Tech Gadgets"],
+      extras: ["Trophy", "Certificate", "InterviewBuddy Vouchers"],
       color: "from-[#CD7F32] to-[#B87333]",
       delay: 500
     }

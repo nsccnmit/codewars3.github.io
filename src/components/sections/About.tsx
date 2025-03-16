@@ -3,8 +3,8 @@ import GradientText from "../ui/GradientText";
 import CountdownTimer from "../ui/CountdownTimer";
 
 const About = () => {
-  // Target date: April 3rd, 2025
-  const eventDate = new Date("2025-04-03T09:00:00");
+  // Target date: April 4th, 2025
+  const eventDate = new Date("2025-04-04T09:00:00");
   
   return (
     <section id="about" className="section-container">
@@ -23,7 +23,7 @@ const About = () => {
       <div className="glass rounded-2xl p-8 md:p-12 max-w-4xl mx-auto mb-20">
         <div className="text-center mb-8">
           <h3 className="text-2xl font-bold text-white mb-2">Event Countdown</h3>
-          <p className="text-white/70">Mark your calendars for April 3rd, 2025</p>
+          <p className="text-white/70">Mark your calendars for April 4th, 2025</p>
         </div>
         
         <CountdownTimer targetDate={eventDate} />
@@ -36,7 +36,7 @@ const About = () => {
           </div>
           <h3 className="text-xl font-bold text-white mb-3">Multiple Rounds</h3>
           <p className="text-white/70">
-            From online MCQs to intense on-campus coding battles, navigate through challenging rounds that test different aspects of your skills.
+            From interactive quizzes to intense coding battles and debugging challenges, navigate through challenging rounds that test different aspects of your skills.
           </p>
         </div>
         
@@ -46,7 +46,7 @@ const About = () => {
           </div>
           <h3 className="text-xl font-bold text-white mb-3">Cash Prizes</h3>
           <p className="text-white/70">
-            Compete for a prize pool worth ₹50,000, along with exclusive goodies, certificates, and recognition.
+            Compete for a prize pool worth ₹7,000, along with exclusive vouchers, certificates, and recognition.
           </p>
         </div>
         

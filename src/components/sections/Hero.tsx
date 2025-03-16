@@ -100,7 +100,7 @@ const Hero = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
         <div className="relative mb-6 inline-block animate-float">
-          <span className="glass text-white/90 text-base md:text-lg rounded-full px-5 py-3 backdrop-blur-xl border border-white/10 font-medium">
+          <span className="glass text-white/90 text-xl md:text-2xl rounded-full px-6 py-4 backdrop-blur-xl border border-white/10 font-medium">
             Part of Anaadyanta 2025 • April 4th, 2025
           </span>
         </div>
