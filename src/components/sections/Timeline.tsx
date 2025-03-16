@@ -82,10 +82,9 @@ const Timeline = () => {
                   </div>
                 </div>
                 
-                {/* Connecting line to event */}
+                {/* Connecting line to event - Fixed the direction */}
                 <div className={`absolute top-1/2 transform -translate-y-1/2 w-1/2 h-0.5 
-                               ${index % 2 === 0 ? "right-0 bg-gradient-to-r" : "left-0 bg-gradient-to-l"} 
-                               from-transparent to-codewars-blue`}>
+                               ${index % 2 === 0 ? "left-0 bg-gradient-to-l from-codewars-blue to-transparent" : "right-0 bg-gradient-to-r from-codewars-blue to-transparent"}`}>
                 </div>
               </div>
               
