@@ -5,21 +5,21 @@ const Prizes = () => {
   const prizes = [
     {
       position: "1st Place",
-      prize: "₹25,000",
+      prize: "₹3,500",
       extras: ["Trophy", "Certificate", "Internship Opportunities"],
       color: "from-[#FFD700] to-[#FFC107]",
       delay: 100
     },
     {
       position: "2nd Place",
-      prize: "₹15,000",
+      prize: "₹2,500",
       extras: ["Trophy", "Certificate", "Exclusive Goodies"],
       color: "from-[#C0C0C0] to-[#A0A0A0]",
       delay: 300
     },
     {
       position: "3rd Place",
-      prize: "₹10,000",
+      prize: "₹1,000",
       extras: ["Trophy", "Certificate", "Tech Gadgets"],
       color: "from-[#CD7F32] to-[#B87333]",
       delay: 500
@@ -36,7 +36,7 @@ const Prizes = () => {
           <GradientText>Prizes & Rewards</GradientText>
         </h2>
         <p className="text-lg text-white/80 mt-6">
-          Compete for exciting prizes and recognition in CodeWars 3.0
+          Compete for a total prize pool of ₹7,000 and recognition in CodeWars 3.0
         </p>
       </div>
       
@@ -65,28 +65,15 @@ const Prizes = () => {
       </div>
       
       <div className="mt-20 glass p-8 rounded-2xl max-w-3xl mx-auto">
-        <h3 className="text-center text-2xl font-bold text-white mb-6">Special Categories</h3>
+        <h3 className="text-center text-2xl font-bold text-white mb-6">For All Participants</h3>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="neo-blur p-6 rounded-xl">
-            <h4 className="text-lg font-bold text-white mb-2">Best Female Coder</h4>
-            <p className="text-white/70">Special recognition and prize worth ₹5,000</p>
-          </div>
-          
-          <div className="neo-blur p-6 rounded-xl">
-            <h4 className="text-lg font-bold text-white mb-2">Best Freshman</h4>
-            <p className="text-white/70">Special recognition and prize worth ₹3,000</p>
-          </div>
-          
-          <div className="neo-blur p-6 rounded-xl">
-            <h4 className="text-lg font-bold text-white mb-2">Most Innovative Solution</h4>
-            <p className="text-white/70">Special recognition and tech gadgets</p>
-          </div>
-          
-          <div className="neo-blur p-6 rounded-xl">
-            <h4 className="text-lg font-bold text-white mb-2">Participation Certificate</h4>
-            <p className="text-white/70">Digital certificates for all participants</p>
-          </div>
+        <div className="neo-blur p-6 rounded-xl">
+          <h4 className="text-lg font-bold text-white mb-2 text-center">Exclusive InterviewBuddy Vouchers</h4>
+          <p className="text-white/70 text-center">All participants will receive valuable vouchers from InterviewBuddy to help with interview preparation.</p>
+        </div>
+        
+        <div className="mt-8 text-center">
+          <p className="text-white/80">All participants will also receive digital certificates of participation.</p>
         </div>
       </div>
     </section>

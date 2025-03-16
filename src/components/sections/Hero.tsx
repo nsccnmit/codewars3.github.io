@@ -19,19 +19,25 @@ const BinaryCodeBackground = () => {
   return (
     <div className="binary-code">
       <div className="binary-code-animation left-animation">
-        {generateBinaryString(2000)}
+        {generateBinaryString(3000)}
       </div>
       <div className="binary-code-animation center-animation" style={{ animationDelay: "2s" }}>
-        {generateBinaryString(2000)}
+        {generateBinaryString(3000)}
       </div>
       <div className="binary-code-animation right-animation" style={{ animationDelay: "4s" }}>
-        {generateBinaryString(2000)}
+        {generateBinaryString(3000)}
       </div>
-      <div className="binary-code-animation left-animation" style={{ animationDelay: "6s", top: "30%" }}>
-        {generateBinaryString(1500)}
+      <div className="binary-code-animation left-animation" style={{ animationDelay: "1s", top: "20%" }}>
+        {generateBinaryString(3000)}
       </div>
-      <div className="binary-code-animation right-animation" style={{ animationDelay: "8s", top: "50%" }}>
-        {generateBinaryString(1500)}
+      <div className="binary-code-animation right-animation" style={{ animationDelay: "3s", top: "40%" }}>
+        {generateBinaryString(3000)}
+      </div>
+      <div className="binary-code-animation center-animation" style={{ animationDelay: "5s", top: "60%" }}>
+        {generateBinaryString(3000)}
+      </div>
+      <div className="binary-code-animation left-animation" style={{ animationDelay: "7s", top: "80%" }}>
+        {generateBinaryString(3000)}
       </div>
     </div>
   );
@@ -69,7 +75,7 @@ const Hero = () => {
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
       style={{
-        backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.1) 0%, rgba(10, 14, 10, 0) 50%)'
+        backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.05) 0%, rgba(10, 14, 10, 0) 50%)'
       }}
     >
       <BinaryCodeBackground />
@@ -77,7 +83,7 @@ const Hero = () => {
       <div 
         className="absolute top-0 left-0 w-full h-full"
         style={{
-          background: 'radial-gradient(circle at 20% 30%, rgba(34, 197, 94, 0.08) 0%, rgba(10, 14, 10, 0) 30%)',
+          background: 'radial-gradient(circle at 20% 30%, rgba(34, 197, 94, 0.05) 0%, rgba(10, 14, 10, 0) 30%)',
           transform: 'translate(var(--move-x, 0), var(--move-y, 0))',
           transition: 'transform 0.1s ease-out'
         }}
@@ -86,7 +92,7 @@ const Hero = () => {
       <div 
         className="absolute top-0 left-0 w-full h-full"
         style={{
-          background: 'radial-gradient(circle at 80% 70%, rgba(34, 197, 94, 0.08) 0%, rgba(10, 14, 10, 0) 30%)',
+          background: 'radial-gradient(circle at 80% 70%, rgba(34, 197, 94, 0.05) 0%, rgba(10, 14, 10, 0) 30%)',
           transform: 'translate(calc(var(--move-x, 0) * -1), calc(var(--move-y, 0) * -1))',
           transition: 'transform 0.1s ease-out'
         }}
@@ -94,8 +100,8 @@ const Hero = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
         <div className="relative mb-6 inline-block animate-float">
-          <span className="glass text-white/90 text-sm rounded-full px-4 py-2 backdrop-blur-xl border border-white/10">
-            Part of Anaadyanta 2025 • April 3rd, 2025
+          <span className="glass text-white/90 text-base md:text-lg rounded-full px-5 py-3 backdrop-blur-xl border border-white/10 font-medium">
+            Part of Anaadyanta 2025 • April 4th, 2025
           </span>
         </div>
         
@@ -122,18 +128,11 @@ const Hero = () => {
         </div>
         
         <div className="mt-16 animate-fade-in" style={{ animationDelay: '800ms' }}>
-          <div className="glass inline-block px-6 py-3 backdrop-blur-xl border border-white/10 rounded-lg">
-            <span className="text-white/90">
-              NMIT Campus, Bengaluru • April 3rd, 2025
+          <div className="glass inline-block px-6 py-4 backdrop-blur-xl border border-white/10 rounded-lg">
+            <span className="text-white/90 text-lg font-medium">
+              NMIT Campus, Bengaluru • April 4th, 2025
             </span>
           </div>
-        </div>
-      </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </div>

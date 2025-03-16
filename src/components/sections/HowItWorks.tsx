@@ -8,7 +8,7 @@ const HowItWorks = () => {
     {
       icon: <UserCheck className="text-codewars-blue w-12 h-12" />,
       title: "Register",
-      description: "Sign up on Unstop before the registration deadline to secure your spot in the competition.",
+      description: "Sign up on Unstop before March 30, 2025 to secure your spot in the competition.",
       delay: 100
     },
     {
@@ -26,7 +26,7 @@ const HowItWorks = () => {
   ];
   
   return (
-    <section className="bg-codewars-navy/30 py-24 pb-12">
+    <section className="bg-codewars-navy/30 py-24 pb-0">
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-block mb-3 bg-codewars-blue/10 text-codewars-blue px-3 py-1 rounded-full text-sm font-medium">
@@ -60,7 +60,7 @@ const HowItWorks = () => {
           ))}
         </div>
         
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center pb-16">
           <a 
             href="https://unstop.com" 
             target="_blank"

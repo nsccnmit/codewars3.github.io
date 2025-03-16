@@ -5,27 +5,32 @@ import GradientText from "../ui/GradientText";
 const Timeline = () => {
   const timelineEvents = [
     {
-      date: "March 15, 2025",
+      date: "March 16, 2025",
       title: "Registration Opens",
       description: "Sign up on Unstop to secure your spot in CodeWars 3.0"
     },
     {
-      date: "March 25, 2025",
-      title: "Round 1: Online MCQs",
-      description: "Multiple-choice questions on programming fundamentals"
+      date: "March 30, 2025",
+      title: "Registration Closes",
+      description: "Last day to register for the competition"
     },
     {
-      date: "April 1, 2025",
-      title: "Round 2: Coding Challenge",
-      description: "Solve algorithmic problems and showcase your coding skills"
+      date: "April 4, 2025",
+      title: "Round 1: TRIVIA TRIUMPH",
+      description: "Interactive quiz on Menti testing coding knowledge and logical reasoning"
     },
     {
-      date: "April 3, 2025",
-      title: "Round 3: Final Hackathon",
-      description: "On-campus live coding battle at NMIT, Bengaluru"
+      date: "April 4, 2025",
+      title: "Round 2: BYTE-SIZED BATTLE",
+      description: "Write the shortest possible correct solution to coding challenges"
     },
     {
-      date: "April 3, 2025",
+      date: "April 4, 2025",
+      title: "Round 3: BUG BUSTER",
+      description: "Debugging challenge with strategic sabotage element"
+    },
+    {
+      date: "April 4, 2025",
       title: "Award Ceremony",
       description: "Winners announcement and prize distribution"
     }

@@ -6,35 +6,35 @@ import AnimatedCard from "../ui/AnimatedCard";
 const EventDetails = () => {
   const rounds = [
     {
-      title: "Round 1: Online MCQs",
-      description: "Test your fundamental knowledge with a series of multiple-choice questions covering algorithms, data structures, and general programming concepts.",
+      title: "Round 1: TRIVIA TRIUMPH",
+      description: "An interactive quiz on Menti that tests your knowledge about coding, algorithms, logical reasoning, and general computer science concepts.",
       details: [
-        "Duration: 60 minutes",
-        "Format: 30 multiple-choice questions",
-        "Topics: Data structures, algorithms, time complexity",
-        "Platform: Online via Unstop"
+        "Duration: 1 hour",
+        "Format: Interactive real-time quiz",
+        "Platform: Menti",
+        "Judging: Speed & accuracy of responses"
       ],
       delay: 100
     },
     {
-      title: "Round 2: Coding Challenge",
-      description: "Solve a set of coding problems with increasing difficulty levels to demonstrate your problem-solving skills and algorithmic thinking.",
+      title: "Round 2: BYTE-SIZED BATTLE",
+      description: "A code golf challenge where teams compete to write the most concise yet functional solution to programming problems.",
       details: [
-        "Duration: 2 hours",
-        "Format: 5 programming problems",
-        "Languages: C, C++, Java, Python",
-        "Judging: Based on correctness, efficiency, and code quality"
+        "Duration: 1.5 hours",
+        "Format: One-on-one team matchups based on chosen language",
+        "Objective: Fewest characters of correct code wins",
+        "Tiebreakers: Submission time, execution efficiency"
       ],
       delay: 300
     },
     {
-      title: "Round 3: Live Hackathon",
-      description: "The final showdown! Qualify for the on-site round at NMIT campus and compete in a live coding battle against the best participants.",
+      title: "Round 3: BUG BUSTER",
+      description: "The ultimate debugging challenge with a strategic sabotage element where teams fix buggy code while also injecting bugs into opponents' code.",
       details: [
-        "Duration: 4 hours",
-        "Format: Team-based hackathon (1-3 members)",
-        "Challenge: Build a solution for a real-world problem",
-        "Venue: NMIT Campus, Bengaluru"
+        "Duration: 1.5 hours",
+        "Format: Debug code with all errors as quickly as possible",
+        "Strategic element: 3-minute window to inject bugs into opponent's code",
+        "Judging: Speed and correctness of debugging"
       ],
       delay: 500
     }
@@ -76,12 +76,12 @@ const EventDetails = () => {
             {index === rounds.length - 1 && (
               <div className="mt-8 flex justify-center">
                 <a 
-                  href="https://unstop.com" 
+                  href="https://leetcode.com/problems/valid-binary-search-tree/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-codewars-blue hover:text-codewars-cyan transition-colors"
                 >
-                  <span>View complete rules and guidelines</span>
+                  <span>Try a sample problem on LeetCode</span>
                   <ExternalLink size={16} />
                 </a>
               </div>
@@ -90,45 +90,24 @@ const EventDetails = () => {
         ))}
       </div>
       
-      <div className="mt-20 mb-12 max-w-3xl mx-auto text-center">
-        <h3 className="text-2xl font-bold text-white mb-4">Sample Problem</h3>
-        <p className="text-white/80 mb-8">
-          Get a taste of what to expect in the competition with this sample problem:
-        </p>
-      </div>
-      
-      <div className="glass p-8 rounded-2xl max-w-4xl mx-auto animate-fade-in-up">
-        <h4 className="text-xl font-bold blue-glow mb-4">Binary Search Tree Validator</h4>
-        <p className="text-white/80 mb-6">
-          Write a function that determines if a given binary tree is a valid binary search tree. A valid BST satisfies the condition where all nodes in the left subtree have values less than the node's value, and all nodes in the right subtree have values greater than the node's value.
-        </p>
+      <div className="mt-20 glass p-8 rounded-2xl max-w-4xl mx-auto">
+        <h3 className="text-center text-2xl font-bold text-white mb-6">Fair Play & Violation Consequences</h3>
         
-        <div className="bg-black/20 p-4 rounded-lg mb-6 font-mono text-sm text-white/90 overflow-x-auto">
-          <pre>{`class TreeNode {
-  int val;
-  TreeNode left;
-  TreeNode right;
-  
-  TreeNode(int val) {
-    this.val = val;
-  }
-}
-
-boolean isValidBST(TreeNode root) {
-  // Your solution here
-}`}</pre>
-        </div>
-        
-        <div className="flex justify-end">
-          <a 
-            href="https://unstop.com" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-codewars-blue hover:text-codewars-cyan transition-colors flex items-center space-x-2"
-          >
-            <span>Try more sample problems</span>
-            <ExternalLink size={16} />
-          </a>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="neo-blur p-6 rounded-xl">
+            <h4 className="text-lg font-bold text-white mb-2">Plagiarism</h4>
+            <p className="text-white/70">Unauthorized collaboration or external help will result in disqualification.</p>
+          </div>
+          
+          <div className="neo-blur p-6 rounded-xl">
+            <h4 className="text-lg font-bold text-white mb-2">Team Disruption</h4>
+            <p className="text-white/70">Disrupting another team (outside of Round 3 bug injection) will lead to immediate elimination.</p>
+          </div>
+          
+          <div className="neo-blur p-6 rounded-xl">
+            <h4 className="text-lg font-bold text-white mb-2">Unfair Debugging</h4>
+            <p className="text-white/70">Deleting code instead of fixing it will result in penalty points or disqualification.</p>
+          </div>
         </div>
       </div>
     </section>
