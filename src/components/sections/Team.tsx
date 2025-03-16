@@ -6,50 +6,74 @@ import AnimatedCard from "../ui/AnimatedCard";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Alex Johnson",
-      role: "Event Lead",
+      name: "Aarjika Lahiri",
+      role: "President",
       image: "https://placehold.co/400x400?text=AJ",
-      linkedin: "https://linkedin.com",
+      linkedin: "https://www.linkedin.com/in/aarjika-lahiri-471129281/",
       github: "https://github.com",
       delay: 100
     },
     {
-      name: "Samantha Lee",
-      role: "Technical Head",
+      name: "Ayush Sikriwal",
+      role: "Vice President",
       image: "https://placehold.co/400x400?text=SL",
-      linkedin: "https://linkedin.com",
+      linkedin: "https://www.linkedin.com/in/ayush-sikriwal-88b93a203",
       github: "https://github.com",
       delay: 200
     },
     {
-      name: "Rahul Sharma",
-      role: "Marketing Lead",
+      name: "Himanshu Agarwal",
+      role: "General Secretary",
       image: "https://placehold.co/400x400?text=RS",
       linkedin: "https://linkedin.com",
       github: "https://github.com",
       delay: 300
     },
     {
-      name: "Priya Patel",
-      role: "Design Head",
+      name: "Mridul Tiwari",
+      role: "Tech Head",
       image: "https://placehold.co/400x400?text=PP",
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
+      linkedin: "https://www.linkedin.com/in/mridul-tiwari-502825291/",
+      github: "https://github.com/mridulchills",
       delay: 400
     },
     {
-      name: "Michael Chen",
-      role: "Sponsorship Coordinator",
+      name: "Aditya Singh",
+      role: "Design Head",
       image: "https://placehold.co/400x400?text=MC",
       linkedin: "https://linkedin.com",
       github: "https://github.com",
       delay: 500
     },
     {
-      name: "Sarah Wilson",
-      role: "Content Creator",
+      name: "Harshit Ashok Hanabar",
+      role: "Social Media Head",
       image: "https://placehold.co/400x400?text=SW",
       linkedin: "https://linkedin.com",
+      github: "https://github.com",
+      delay: 600
+    },
+    {
+      name: "Prem Piyush",
+      role: "Documentation Head",
+      image: "https://placehold.co/400x400?text=SW",
+      linkedin: "https://www.linkedin.com/in/prem-piyush-2185292ab/",
+      github: "https://github.com",
+      delay: 600
+    },
+    {
+      name: "Bhargavi Saraswat",
+      role: "Marketing Head",
+      image: "https://placehold.co/400x400?text=SW",
+      linkedin: "https://www.linkedin.com/in/bhargavi-saraswat-441b31274/",
+      github: "https://github.com",
+      delay: 600
+    },
+    {
+      name: "Parvathy S",
+      role: "Public Relations Head",
+      image: "https://placehold.co/400x400?text=SW",
+      linkedin: "https://www.linkedin.com/in/parvathy-s-a14438281/",
       github: "https://github.com",
       delay: 600
     }
