@@ -41,15 +41,15 @@ const Team = () => {
       name: "Aditya Singh",
       role: "Design Head",
       image: "https://placehold.co/400x400?text=MC",
-      linkedin: "https://linkedin.com",
+      linkedin: "https://www.linkedin.com/in/aditya-kumar-04a1b12b8/",
       github: "https://github.com",
       delay: 500
     },
     {
-      name: "Harshit Ashok Hanabar",
+      name: "Harshit Hanabar",
       role: "Social Media Head",
       image: "https://placehold.co/400x400?text=SW",
-      linkedin: "https://linkedin.com",
+      linkedin: "https://www.linkedin.com/in/harshit-hanabar-a3b203282/",
       github: "https://github.com",
       delay: 600
     },
