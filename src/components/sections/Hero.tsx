@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from "react";
 import GradientText from "../ui/GradientText";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 // Enhanced binary code animation in the background
 const BinaryCodeBackground = () => {
@@ -45,6 +46,7 @@ const BinaryCodeBackground = () => {
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
   
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -100,7 +102,7 @@ const Hero = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
         <div className="relative mb-6 inline-block animate-float">
-          <span className="glass text-white/90 text-xl md:text-2xl rounded-full px-6 py-4 backdrop-blur-xl border border-white/10 font-medium">
+          <span className="glass text-white/90 text-sm md:text-xl lg:text-2xl rounded-full px-4 md:px-6 py-2 md:py-4 backdrop-blur-xl border border-white/10 font-medium whitespace-normal md:whitespace-nowrap">
             Part of Anaadyanta 2025 • April 4th, 2025
           </span>
         </div>
@@ -128,8 +130,8 @@ const Hero = () => {
         </div>
         
         <div className="mt-16 animate-fade-in" style={{ animationDelay: '800ms' }}>
-          <div className="glass inline-block px-6 py-4 backdrop-blur-xl border border-white/10 rounded-lg">
-            <span className="text-white/90 text-lg font-medium">
+          <div className="glass inline-block px-4 md:px-6 py-2 md:py-4 backdrop-blur-xl border border-white/10 rounded-lg">
+            <span className="text-white/90 text-sm md:text-lg font-medium">
               NMIT Campus, Bengaluru • April 4th, 2025
             </span>
           </div>

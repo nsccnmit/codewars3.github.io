@@ -1,8 +1,11 @@
 
 import { CalendarClock, Circle } from "lucide-react";
 import GradientText from "../ui/GradientText";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Timeline = () => {
+  const isMobile = useIsMobile();
+  
   const timelineEvents = [
     {
       date: "March 16, 2025",
@@ -51,54 +54,86 @@ const Timeline = () => {
           </p>
         </div>
         
-        <div className="max-w-5xl mx-auto relative">
-          {/* Center line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-codewars-blue via-codewars-cyan to-codewars-purple"></div>
-          
-          {timelineEvents.map((event, index) => (
-            <div 
-              key={index} 
-              className={`flex items-stretch mb-16 opacity-0 animate-fade-in-up ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
-              style={{ animationDelay: `${index * 200}ms` }}
-            >
-              {/* Content side */}
-              <div className={`w-5/12 ${index % 2 === 0 ? "pr-12 text-right" : "pl-12 text-left"}`}>
-                <div className="glass p-6 rounded-xl h-full flex flex-col justify-center">
-                  <h3 className="text-xl font-bold blue-glow mb-2" style={{
-                    fontSize: "clamp(1px, 3vw, 24px)",
-                    overflowWrap: "break-word"
-                  }}>{event.title}</h3>
-                  <div className="flex items-center mb-3 justify-center sm:justify-start text-sm">
-                    <CalendarClock className="h-4 w-4 text-codewars-blue mr-2" />
-                    <span className="text-white/70">{event.date}</span>
-                  </div>
-                  <p className="text-white/80" style={{
-                    fontSize: "clamp(1px, 3vw, 18px)",
-                    overflowWrap: "break-word"
-                  }}>{event.description}</p>
-                </div>
-              </div>
-              
-              {/* Middle node and arrow */}
-              <div className="w-2/12 flex justify-center relative">
-                <div className="absolute top-1/2 transform -translate-y-1/2 flex items-center justify-center z-10">
-                  <div className="w-8 h-8 rounded-full bg-codewars-blue/20 flex items-center justify-center 
+        {isMobile ? (
+          // Mobile timeline layout (vertical)
+          <div className="max-w-md mx-auto relative">
+            {/* Center line */}
+            <div className="absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-codewars-blue via-codewars-cyan to-codewars-purple"></div>
+            
+            {timelineEvents.map((event, index) => (
+              <div 
+                key={index} 
+                className="flex mb-12 opacity-0 animate-fade-in-up pl-16 relative"
+                style={{ animationDelay: `${index * 200}ms` }}
+              >
+                {/* Circle indicator on timeline */}
+                <div className="absolute left-4 top-5 transform -translate-x-1/2 z-10">
+                  <div className="w-6 h-6 rounded-full bg-codewars-blue/20 flex items-center justify-center 
                                border-2 border-codewars-blue shadow-[0_0_10px_rgba(14,165,233,0.6)]">
-                    <Circle className="w-3 h-3 text-codewars-blue fill-codewars-blue" />
+                    <Circle className="w-2 h-2 text-codewars-blue fill-codewars-blue" />
                   </div>
                 </div>
                 
-                {/* Connecting line to event */}
-                <div className={`absolute top-1/2 transform -translate-y-1/2 w-1/2 h-0.5 
-                               ${index % 2 === 0 ? "left-0 bg-gradient-to-l from-codewars-blue to-transparent" : "right-0 bg-gradient-to-r from-codewars-blue to-transparent"}`}>
+                {/* Horizontal connector */}
+                <div className="absolute left-6 top-5 w-10 h-0.5 bg-gradient-to-r from-codewars-blue to-transparent"></div>
+                
+                {/* Content */}
+                <div className="glass p-4 rounded-xl w-full">
+                  <h3 className="text-lg font-bold blue-glow mb-2">{event.title}</h3>
+                  <div className="flex items-center mb-3 text-xs">
+                    <CalendarClock className="h-3 w-3 text-codewars-blue mr-1" />
+                    <span className="text-white/70">{event.date}</span>
+                  </div>
+                  <p className="text-white/80 text-sm">{event.description}</p>
                 </div>
               </div>
-              
-              {/* Empty side */}
-              <div className="w-5/12"></div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : (
+          // Desktop timeline layout (alternating)
+          <div className="max-w-5xl mx-auto relative">
+            {/* Center line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-codewars-blue via-codewars-cyan to-codewars-purple"></div>
+            
+            {timelineEvents.map((event, index) => (
+              <div 
+                key={index} 
+                className={`flex items-stretch mb-16 opacity-0 animate-fade-in-up ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
+                style={{ animationDelay: `${index * 200}ms` }}
+              >
+                {/* Content side */}
+                <div className={`w-5/12 ${index % 2 === 0 ? "pr-12 text-right" : "pl-12 text-left"}`}>
+                  <div className="glass p-6 rounded-xl h-full flex flex-col justify-center">
+                    <h3 className="text-xl font-bold blue-glow mb-2">{event.title}</h3>
+                    <div className={`flex items-center mb-3 ${index % 2 === 0 ? "justify-end" : "justify-start"} text-sm`}>
+                      <CalendarClock className="h-4 w-4 text-codewars-blue mr-2" />
+                      <span className="text-white/70">{event.date}</span>
+                    </div>
+                    <p className="text-white/80">{event.description}</p>
+                  </div>
+                </div>
+                
+                {/* Middle node and arrow */}
+                <div className="w-2/12 flex justify-center relative">
+                  <div className="absolute top-1/2 transform -translate-y-1/2 flex items-center justify-center z-10">
+                    <div className="w-8 h-8 rounded-full bg-codewars-blue/20 flex items-center justify-center 
+                                 border-2 border-codewars-blue shadow-[0_0_10px_rgba(14,165,233,0.6)]">
+                      <Circle className="w-3 h-3 text-codewars-blue fill-codewars-blue" />
+                    </div>
+                  </div>
+                  
+                  {/* Connecting line to event */}
+                  <div className={`absolute top-1/2 transform -translate-y-1/2 w-1/2 h-0.5 
+                                 ${index % 2 === 0 ? "left-0 bg-gradient-to-l from-codewars-blue to-transparent" : "right-0 bg-gradient-to-r from-codewars-blue to-transparent"}`}>
+                  </div>
+                </div>
+                
+                {/* Empty side */}
+                <div className="w-5/12"></div>
+              </div>
+            ))}
+          </div>
+        )}
         
         <div className="mt-16 text-center">
           <a 
