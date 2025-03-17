@@ -2,32 +2,36 @@
 import GradientText from "../ui/GradientText";
 import { Award, Medal, Trophy } from "lucide-react";
 import AnimatedCard from "../ui/AnimatedCard";
+import { HoverCard, HoverCardTrigger, HoverCardContent } from "../ui/hover-card";
 
 const Prizes = () => {
   const prizes = [
     {
       position: "1st Place",
       prize: "₹3,500",
-      extras: ["Trophy", "Certificate", "InterviewBuddy Vouchers"],
+      extras: ["Certificate", "InterviewBuddy Vouchers"],
       color: "from-[#FFD700] to-[#FFC107]",
       delay: 100,
-      icon: <Trophy className="h-10 w-10 text-white animate-pulse" />
+      icon: <Trophy className="h-10 w-10 text-white animate-pulse" />,
+      trophy: "🏆"
     },
     {
       position: "2nd Place",
       prize: "₹2,500",
-      extras: ["Trophy", "Certificate", "InterviewBuddy Vouchers"],
+      extras: ["Certificate", "InterviewBuddy Vouchers"],
       color: "from-[#C0C0C0] to-[#A0A0A0]",
       delay: 300,
-      icon: <Medal className="h-10 w-10 text-white animate-pulse" />
+      icon: <Medal className="h-10 w-10 text-white animate-pulse" />,
+      trophy: "🥈"
     },
     {
       position: "3rd Place",
       prize: "₹1,000",
-      extras: ["Trophy", "Certificate", "InterviewBuddy Vouchers"],
+      extras: ["Certificate", "InterviewBuddy Vouchers"],
       color: "from-[#CD7F32] to-[#B87333]",
       delay: 500,
-      icon: <Award className="h-10 w-10 text-white animate-pulse" />
+      icon: <Award className="h-10 w-10 text-white animate-pulse" />,
+      trophy: "🥉"
     }
   ];
   
@@ -58,6 +62,18 @@ const Prizes = () => {
             </div>
             <h3 className="text-xl font-bold text-white mb-3">{prize.position}</h3>
             <div className="text-3xl font-bold blue-glow mb-4 animate-text-shimmer">{prize.prize}</div>
+            
+            <HoverCard>
+              <HoverCardTrigger>
+                <div className="text-4xl mb-4 cursor-pointer transition-all duration-300 hover:scale-125 hover:rotate-12 animate-float">
+                  {prize.trophy}
+                </div>
+              </HoverCardTrigger>
+              <HoverCardContent className="bg-black/80 border border-codewars-blue/30 text-white">
+                <p>Winner receives a prestigious trophy!</p>
+              </HoverCardContent>
+            </HoverCard>
+            
             <div className="mt-4">
               <h4 className="text-white font-medium mb-2">Additional Rewards:</h4>
               <ul className="flex flex-col space-y-2">
