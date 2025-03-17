@@ -36,7 +36,7 @@ const Team = () => {
       name: "Himanshu Agarwal",
       role: "General Secretary",
       image: HimanshuImg,
-      linkedin: "https://linkedin.com",
+      linkedin: "https://www.linkedin.com/in/himanshu-agarwal-3079b1304/",
       github: "https://github.com",
       delay: 300
     },
