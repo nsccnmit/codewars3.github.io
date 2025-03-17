@@ -20,8 +20,8 @@ const About = () => {
         </p>
       </div>
       
-      <div className="glass rounded-2xl p-8 md:p-12 max-w-4xl mx-auto mb-20">
-        <div className="text-center mb-8">
+      <div className="glass rounded-2xl p-4 md:p-12 max-w-4xl mx-auto mb-20">
+        <div className="text-center mb-6">
           <h3 className="text-2xl font-bold text-white mb-2">Event Countdown</h3>
           <p className="text-white/70">Mark your calendars for April 4th, 2025</p>
         </div>
