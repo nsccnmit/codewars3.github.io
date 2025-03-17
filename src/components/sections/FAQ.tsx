@@ -108,7 +108,7 @@ const FAQ = () => {
           Don't see your question here? Feel free to reach out to us directly.
         </p>
         <a 
-          href="mailto:core.nscc25@gmail.com" 
+          href="https://forms.gle/ysFZisanDKuhx9pJ8" 
           target="_blank"
           rel="noopener noreferrer"
           className="button-secondary inline-flex"
