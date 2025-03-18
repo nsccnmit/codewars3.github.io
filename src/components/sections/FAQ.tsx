@@ -49,11 +49,11 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Who can participate in CodeWars 3.0?",
-      answer: "CodeWars 3.0 is open to all college students across India. Whether you're a fresher or a final year student, you're welcome to showcase your coding skills. Professionals can also participate in a separate category."
+      answer: "CodeWars 3.0 is open to all college students across India. Whether you're a fresher or a final year student, you're welcome to showcase your coding skills."
     },
     {
       question: "Is there a registration fee?",
-      answer: "Yes, there is a minimal registration fee of ₹150 per team for CodeWars 3.0. This helps us provide a better event experience for all participants."
+      answer: "Yes, there is a minimal registration fee of ₹80 per team for CodeWars 3.0. This helps us provide a better event experience for all participants."
     },
     {
       question: "Can I participate as a team?",
