@@ -155,7 +155,7 @@ const Sponsors = () => {
           Reach out to us for partnership opportunities.
         </p>
         <a 
-          href="mailto:sponsors@codewars.tech" 
+          href="mailto:core.nscc25@gmail.com" 
           className="button-primary inline-flex"
         >
           Contact for Sponsorship
