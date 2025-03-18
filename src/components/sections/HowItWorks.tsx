@@ -62,7 +62,7 @@ const HowItWorks = () => {
         
         <div className="mt-16 text-center">
           <a 
-            href="https://unstop.com" 
+            href="https://unstop.com/o/QqgMj4O?lb=s4UlNwJR" 
             target="_blank"
             rel="noopener noreferrer"
             className="button-primary"
