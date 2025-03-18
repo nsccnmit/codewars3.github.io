@@ -117,7 +117,7 @@ const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '600ms' }}>
           <a 
-            href="https://unstop.com" 
+            href="https://unstop.com/o/QqgMj4O?lb=s4UlNwJR" 
             target="_blank"
             rel="noopener noreferrer"
             className="button-primary"
