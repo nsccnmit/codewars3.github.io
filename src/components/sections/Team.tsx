@@ -1,5 +1,5 @@
 
-import { Github, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import GradientText from "../ui/GradientText";
 import AnimatedCard from "../ui/AnimatedCard";
 
@@ -13,7 +13,6 @@ import ParvathyImg from "@/components/images/team/Parvathy.jpeg";
 import PremImg from "@/components/images/team/Prem.jpeg";
 import HimanshuImg from "@/components/images/team/Himanshu.jpeg";
 
-
 const Team = () => {
   const teamMembers = [
     {
@@ -21,7 +20,6 @@ const Team = () => {
       role: "President",
       image: AarjikaImg,
       linkedin: "https://www.linkedin.com/in/aarjika-lahiri-471129281/",
-      github: "https://github.com",
       delay: 100
     },
     {
@@ -29,7 +27,6 @@ const Team = () => {
       role: "Vice President",
       image: AyushImg,
       linkedin: "https://www.linkedin.com/in/ayush-sikriwal-88b93a203",
-      github: "https://github.com",
       delay: 200
     },
     {
@@ -37,7 +34,6 @@ const Team = () => {
       role: "General Secretary",
       image: HimanshuImg,
       linkedin: "https://www.linkedin.com/in/himanshu-agarwal-3079b1304/",
-      github: "https://github.com",
       delay: 300
     },
     {
@@ -45,7 +41,6 @@ const Team = () => {
       role: "Tech Head",
       image: MridulImg,
       linkedin: "https://www.linkedin.com/in/mridul-tiwari-502825291/",
-      github: "https://github.com/mridulchills",
       delay: 400
     },
     {
@@ -53,7 +48,6 @@ const Team = () => {
       role: "Design Head",
       image: AdityaImg,
       linkedin: "https://www.linkedin.com/in/aditya-kumar-04a1b12b8/",
-      github: "https://github.com",
       delay: 500
     },
     {
@@ -61,7 +55,6 @@ const Team = () => {
       role: "Social Media Head",
       image: HarshitImg,
       linkedin: "https://www.linkedin.com/in/harshit-hanabar-a3b203282/",
-      github: "https://github.com",
       delay: 600
     },
     {
@@ -69,7 +62,6 @@ const Team = () => {
       role: "Documentation Head",
       image: PremImg,
       linkedin: "https://www.linkedin.com/in/prem-piyush-2185292ab/",
-      github: "https://github.com",
       delay: 600
     },
     {
@@ -77,7 +69,6 @@ const Team = () => {
       role: "Marketing Head",
       image: BhargaviImg,
       linkedin: "https://www.linkedin.com/in/bhargavi-saraswat-441b31274/",
-      github: "https://github.com",
       delay: 600
     },
     {
@@ -85,7 +76,6 @@ const Team = () => {
       role: "Public Relations Head",
       image: ParvathyImg,
       linkedin: "https://www.linkedin.com/in/parvathy-s-a14438281/",
-      github: "https://github.com",
       delay: 600
     }
   ];
@@ -118,15 +108,6 @@ const Team = () => {
             aria-label={`${member.name}'s LinkedIn`}
           >
             <Linkedin size={16} />
-          </a>
-          <a 
-            href={member.github} 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="glass p-2 rounded-full text-white/70 hover:text-codewars-blue transition-colors"
-            aria-label={`${member.name}'s GitHub`}
-          >
-            <Github size={16} />
           </a>
         </div>
       </AnimatedCard>
