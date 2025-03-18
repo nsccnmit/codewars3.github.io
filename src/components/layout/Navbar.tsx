@@ -67,7 +67,7 @@ const Navbar = () => {
           {/* Register Button (Desktop) */}
           <div className="hidden md:block">
             <a 
-              href="https://unstop.com" 
+              href="https://unstop.com/o/QqgMj4O?lb=s4UlNwJR" 
               target="_blank"
               rel="noopener noreferrer"
               className="button-primary"
@@ -107,7 +107,7 @@ const Navbar = () => {
           
           <div className="pt-4">
             <a 
-              href="https://unstop.com" 
+              href="https://unstop.com/o/QqgMj4O?lb=s4UlNwJR" 
               target="_blank"
               rel="noopener noreferrer"
               className="button-primary w-full flex justify-center"
