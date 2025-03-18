@@ -2,6 +2,12 @@
 import { ExternalLink } from "lucide-react";
 import GradientText from "../ui/GradientText";
 import AnimatedCard from "../ui/AnimatedCard";
+import { 
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
 
 const Sponsors = () => {
   const sponsors = [
@@ -40,14 +46,25 @@ const Sponsors = () => {
                 className="p-6 flex flex-col items-center justify-center group w-full max-w-md h-full"
                 animationDelay={sponsor.delay}
               >
-                <div className="relative overflow-hidden rounded-lg w-full">
-                  <img 
-                    src={sponsor.logo} 
-                    alt={`${sponsor.name} logo`} 
-                    className="w-full h-auto object-contain transition-transform group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div className="relative overflow-hidden rounded-lg w-full p-4 bg-white/5 backdrop-blur-xl border border-white/20">
+                        <div className="p-4 rounded-lg bg-white/10">
+                          <img 
+                            src={sponsor.logo} 
+                            alt={`${sponsor.name} logo`} 
+                            className="w-full h-auto object-contain transition-transform group-hover:scale-105"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent className="bg-codewars-navy border border-codewars-blue/30 text-white">
+                      <p>Click to visit {sponsor.name}'s website</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
                 
                 <div className="mt-4 text-center">
                   <h4 className="text-lg font-medium text-white mb-2">{sponsor.name}</h4>
