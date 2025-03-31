@@ -1,5 +1,5 @@
 
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, MapPin } from "lucide-react";
 import GradientText from "../ui/GradientText";
 import AnimatedCard from "../ui/AnimatedCard";
 import { 
@@ -10,6 +10,15 @@ import {
 } from "../ui/tooltip";
 
 const Sponsors = () => {
+  const titleSponsors = [
+    {
+      name: "Green Leaf",
+      logo: "/lovable-uploads/cf80bc2c-ede2-4859-a30b-48fa6800a7e8.png",
+      location: "https://maps.app.goo.gl/6uKAhcmBBKamx44d6",
+      delay: 50
+    }
+  ];
+  
   const sponsors = [
     {
       name: "InterviewBuddy",
@@ -34,6 +43,56 @@ const Sponsors = () => {
       </div>
       
       <div className="space-y-16">
+        {/* Title Sponsors Section */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-center mb-8">
+            <span className="glass px-4 py-2 rounded-lg">Title Sponsor</span>
+          </h3>
+          
+          <div className="grid gap-8 justify-items-center grid-cols-1">
+            {titleSponsors.map((sponsor, sponsorIndex) => (
+              <AnimatedCard 
+                key={sponsorIndex}
+                className="p-6 flex flex-col items-center justify-center group w-full max-w-md h-full"
+                animationDelay={sponsor.delay}
+              >
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div className="relative overflow-hidden rounded-lg w-full p-4 backdrop-blur-xl border border-white/20 bg-white/90">
+                        <div className="p-4 rounded-lg">
+                          <img 
+                            src={sponsor.logo} 
+                            alt={`${sponsor.name} logo`} 
+                            className="w-full h-auto object-contain transition-transform group-hover:scale-105"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent className="bg-codewars-navy border border-codewars-blue/30 text-white">
+                      <p>Click to view {sponsor.name}'s location</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                
+                <div className="mt-4 text-center">
+                  <h4 className="text-lg font-medium text-white mb-2">{sponsor.name}</h4>
+                  <a 
+                    href={sponsor.location} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-codewars-blue hover:text-codewars-cyan transition-colors text-sm"
+                  >
+                    View Location <MapPin className="ml-1 h-3 w-3" />
+                  </a>
+                </div>
+              </AnimatedCard>
+            ))}
+          </div>
+        </div>
+        
+        {/* Regular Sponsors Section */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold text-center mb-8">
             <span className="glass px-4 py-2 rounded-lg">Sponsors</span>
