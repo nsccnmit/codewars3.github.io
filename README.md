@@ -1,59 +1,82 @@
-# Codewars Landing Page
+# Codewars3 Landing Page
 
-This is a simple, responsive landing page created for a Codewars-related project. It serves as a frontend entry point to present the idea, concept, or branding for the project in a clean and engaging way.
+A modern, responsive landing page for the Codewars3 project, developed by the NSCC NMIT team. This site serves as the official front-facing introduction to the project, built using TypeScript, Tailwind CSS, and Vite.
 
-**Live Site**: [https://codewars3-github-io.vercel.app](https://codewars3-github-io.vercel.app)
+**Live Website**: [https://codewars3-github-io.vercel.app](https://codewars3-github-io.vercel.app)  
+
 
 ## Overview
 
-- Clean, modern layout
-- Mobile-friendly design
-- Fast and lightweight
-- Static HTML/CSS/JS — no frameworks or backend
-- Deployed using Vercel
+- Responsive design for desktop and mobile
+- Built with Vite + React + TypeScript
+- Styled using Tailwind CSS
+- Fast, lightweight, and deploy-ready
+- Hosted on Vercel
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript (optional/interactivity)
-- Deployment: Vercel
+- TypeScript
+- React
+- Tailwind CSS
+- Vite
+- Vercel (for deployment)
 
-## Project Structure
+## Folder Structure
 
 ```
 .
-├── index.html       # Landing page HTML
-├── style.css        # Custom styling
-├── script.js        # Optional scripts (if any)
-└── README.md        # Project documentation
+├── public/                 # Static files
+├── src/
+│   ├── assets/             # Images, logos, etc.
+│   ├── components/         # Reusable UI components
+│   ├── App.tsx             # Main App component
+│   └── main.tsx            # Vite/React entry point
+├── index.html              # Base HTML template
+├── tailwind.config.ts      # Tailwind configuration
+├── vite.config.ts          # Vite configuration
+├── package.json            # Project dependencies and scripts
+└── tsconfig.json           # TypeScript configuration
 ```
 
-## Setup
+## Getting Started
 
-To use or customize this landing page:
+To run the project locally:
 
 1. Clone the repository:
-
+   ```bash
+   git clone https://github.com/nsccnmit/codewars3.github.io.git
+   cd codewars3.github.io
    ```
-   git clone https://github.com/YOUR_USERNAME/codewars3-github-io.git
-   cd codewars3-github-io
+
+2. Install dependencies:
+   ```bash
+   npm install
    ```
 
-2. Open `index.html` in your browser or your code editor.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-3. Make edits to `style.css` or `script.js` as needed.
+4. Open your browser and go to `http://localhost:5173`
 
 ## Deployment
 
-The project is deployed using [Vercel](https://vercel.com), which makes it easy to host static websites with instant previews and custom domains.
+This project is deployed on [Vercel](https://vercel.com). Every push to the `main` branch is automatically deployed.
 
-To deploy your own:
+To deploy your own version:
 
-1. Fork this repository
-2. Connect it to Vercel
-3. Set up automatic deployment from your GitHub repo
+1. Fork this repo to your GitHub account
+2. Connect the repo to Vercel
+3. Set up automatic deployment
+
+## Customization Ideas
+
+- Add sections like "About the Team" or "Project Goals"
+- Integrate animations using Framer Motion
+- Add contact form or feedback form
+- Add links to GitHub, social media, or documentation
 
 ---
 
-This is a basic and fast-loading landing page meant to showcase your project with clarity. Feel free to customize it and build upon it.
+This project serves as a starting point and showcase for future improvements. 
