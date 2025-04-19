@@ -1,8 +1,9 @@
 # Codewars3 Landing Page
 
-A modern, responsive landing page for the Codewars3 project, developed by the NSCC NMIT team. This site serves as the official front-facing introduction to the project, built using TypeScript, Tailwind CSS, and Vite.
+A modern, responsive landing page for the Codewars3 project, developed by the Mridul Tiwari. This site serves as the official front-facing introduction to the project, built using TypeScript, Tailwind CSS, and Vite.
 
-**Live Website**: [https://codewars3-github-io.vercel.app](https://codewars3-github-io.vercel.app)  
+**Live Website**: [https://codewars3-github-io.vercel.app](https://codewars3-github-io.vercel.app) 
+ 
 
 
 ## Overview
